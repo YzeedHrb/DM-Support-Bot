@@ -16,7 +16,7 @@ A Discord bot for managing support tickets with advanced features.
 
 1. Clone the repository:
 ```bash
-git clone git [push -u origin main](https://github.com/YzeedHrb/DM-Support-Bot.git)
+git clone https://github.com/YzeedHrb/DM-Support-Bot.git
 cd DM-Support-Bot
 ```
 
