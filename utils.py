@@ -1,13 +1,3 @@
-"""
-Discord Support Bot Utilities
-Developed by YzeedHrb
-GitHub: https://github.com/YzeedHrb
-Discord: YzeedHrb#0000
-
-This utilities file is part of the Discord Support Bot.
-Any unauthorized distribution or modification of this code is strictly prohibited.
-"""
-
 import json
 import os
 from datetime import datetime
