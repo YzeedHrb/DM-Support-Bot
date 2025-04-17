@@ -1,6 +1,6 @@
-# Discord Support Bot
+# Discord DM Support Bot
 
-A powerful Discord bot for managing support tickets with advanced features.
+A Discord bot for managing support tickets with advanced features.
 
 ## Features
 
@@ -16,8 +16,8 @@ A powerful Discord bot for managing support tickets with advanced features.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YzeedHrb/Discord-Support-Bot.git
-cd Discord-Support-Bot
+git clone git [push -u origin main](https://github.com/YzeedHrb/DM-Support-Bot.git)
+cd DM-Support-Bot
 ```
 
 2. Install the required packages:
@@ -66,10 +66,6 @@ python bot.py
 - `README.md` - Documentation
 - `LICENSE` - MIT License
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -77,21 +73,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Credits
 
 ### Developer
-- **Name:** YzeedHrb
+- **Name:** Yazeed Alharbi
 - **GitHub:** [YzeedHrb](https://github.com/YzeedHrb)
-- **Discord:** YzeedHrb#0000
-
-### Special Thanks
-- Discord.py team for the amazing library
-- All contributors and supporters
+- **Discord:** Yzdev
 
 ## Support
 
 If you need help with this bot, feel free to:
 - Open an issue on GitHub
 - Contact me on Discord
-- Check out the documentation
-
-## Disclaimer
-
-This bot is developed and maintained by YzeedHrb. Any unauthorized distribution or modification of this code is strictly prohibited. 
