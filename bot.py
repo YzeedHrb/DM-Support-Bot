@@ -1,13 +1,3 @@
-"""
-Discord Support Bot
-Developed by YzeedHrb
-GitHub: https://github.com/YzeedHrb
-Discord: YzeedHrb#0000
-
-This bot is developed and maintained by YzeedHrb.
-Any unauthorized distribution or modification of this code is strictly prohibited.
-"""
-
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -20,10 +10,10 @@ import asyncio
 from config import *
 from discord.ext import tasks
 
-# تحميل المتغيرات البيئية
+# Load environmental variables
 load_dotenv()
 
-# إعداد البوت
+# Set up the bot
 intents = discord.Intents.default()
 intents.message_content = True
 intents.guilds = True
@@ -297,7 +287,7 @@ async def save_ticket_log(ticket: Ticket):
         for attachment in ticket.attachments:
             await media_logs.send(f"**Ticket #{ticket.channel_id}** - {attachment}")
 
-# إضافة أزرار تغيير الحالة
+# Add status change buttons
 class StatusButtons(discord.ui.View):
     def __init__(self, ticket):
         super().__init__(timeout=None)
@@ -330,13 +320,13 @@ class StatusButtons(discord.ui.View):
         # Save ticket data
         await save_ticket_data()
 
-# وظيفة حفظ التذاكر
+# Ticket Saving Job
 async def save_ticket_data():
     tickets_data = {channel_id: ticket.to_dict() for channel_id, ticket in tickets.items()}
     with open("tickets.json", "w", encoding="utf-8") as f:
         json.dump(tickets_data, f, ensure_ascii=False, indent=4)
 
-# وظيفة تحميل التذاكر
+# Ticket upload function
 async def load_ticket_data():
     if os.path.exists("tickets.json"):
         with open("tickets.json", "r", encoding="utf-8") as f:
@@ -651,7 +641,7 @@ async def status(interaction: discord.Interaction, status: str):
     await update_status_channel(interaction.guild)
     await interaction.response.send_message("Ticket status changed successfully!", ephemeral=True)
 
-# إضافة أزرار التقييم
+# Add rating buttons
 class RatingButtons(discord.ui.View):
     def __init__(self, ticket):
         super().__init__(timeout=None)
@@ -753,5 +743,5 @@ class RatingButtons(discord.ui.View):
                 rating_embed.set_footer(text="Developed by YzeedHrb")
                 await rating_channel.send(embed=rating_embed)
 
-# تشغيل البوت
+# Run the bot
 bot.run(os.getenv('TOKEN')) 
