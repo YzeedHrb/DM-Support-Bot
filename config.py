@@ -1,13 +1,3 @@
-"""
-Discord Support Bot Configuration
-Developed by YzeedHrb
-GitHub: https://github.com/YzeedHrb
-Discord: YzeedHrb#0000
-
-This configuration file is part of the Discord Support Bot.
-Any unauthorized distribution or modification of this code is strictly prohibited.
-"""
-
 import os
 from dotenv import load_dotenv
 
